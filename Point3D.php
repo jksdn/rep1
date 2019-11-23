@@ -28,7 +28,7 @@ class Point3D
     public function __toString()
     {
         return 'Point3D(x=' . $this->x . ', y=' . $this->y . ', z=' . $this->z
-        . ')';
+            . ')';
     }
 }
 
@@ -43,7 +43,7 @@ class Line3D
     public $end;
 
     public function __construct($xCoord1 = 0, $yCoord1 = 0, $zCoord1 = 0,
-    $xCoord2 = 1, $yCoord2 = 1, $zCoord2 = 1)
+        $xCoord2 = 1, $yCoord2 = 1, $zCoord2 = 1)
     {
         $this->start = new Point3D($xCoord1, $yCoord1, $zCoord1);
         $this->end = new Point3D($xCoord2, $yCoord2, $zCoord2);
@@ -67,7 +67,7 @@ class Line3D
     public function __toString()
     {
         return 'Line3D[start=' . $this->start . ', end=' . $this->end .
-        ', length=' . $this->getLength() . ']';
+            ', length=' . $this->getLength() . ']';
     }
 }
 
