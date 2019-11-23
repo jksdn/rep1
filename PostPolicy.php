@@ -12,7 +12,7 @@ class AuthServiceProvider extends ServiceProvider
 	/**
 	 * The policy mapping for the application.
 	 *
-	 * @var array
+	 * @var		array
 	 */
 	protected $policies = [
 		Post::class => PostPolicy::class,
