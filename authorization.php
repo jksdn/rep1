@@ -2,9 +2,9 @@
 
 namespace App\Policies;
 
-use Illuminate\Auth\Access\Response;
 use App\Post;
 use App\User;
+use Illuminate\Auth\Access\Response;
 
 class PostPolicy
 {
@@ -19,6 +19,6 @@ class PostPolicy
     {
         return $user->id === $post->post_id
             ? Response::allow()
-            : Response::deny("You do not own this post")
+            : Response::deny("You do not own this post");
     }
 }
