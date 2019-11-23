@@ -9,7 +9,7 @@ use App\User;
 class PostPolicy
 {
 	/**
-	 * Determine i the given post can be updated by the user.
+	 * Determine if the given post can be updated by the user.
 	 * 
 	 * @param	\App\User	$user
 	 * @param	\App\Post	$post
