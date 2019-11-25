@@ -20,7 +20,7 @@ class Person
     }
 
     /**
-     * The string representation of this Person as "[firstname] [lastname]"
+     * The string representation of this instance as "[firstname] [lastname]"
      */
     public function __toString()
     {
@@ -49,7 +49,7 @@ class Employee extends Person
     }
 
     /**
-     * The string representation of this Person as "Work as [job] at
+     * The string representation of this instance as "Work as [job] at
      * [company]"
      */
     public function __toString()
@@ -58,7 +58,7 @@ class Employee extends Person
     }
 }
 
-echo '<p>' . (new Employee('Mary', 'Doe', 'Frontend Developer', 'Google'))
+echo '<p>' . (new Employee('John', 'Doe', 'Frontend Developer', 'Google'))
     . '</p>';
 
 echo '<p>' . (new Person('John', 'Doe')) . '</p>';
