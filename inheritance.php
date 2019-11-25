@@ -27,21 +27,21 @@ class Person
  */
 class Employee extends Person
 {
-    private $jobTitle;
+    private $job;
     private $company;
 
     public function __construct($firstName, $lastName, $gender = 'm',
-        $jobTitle, $company)
+        $job, $company)
     {
         parent::__construct($firstName, $lastName, $gender);
 
-        $this->jobTitle = $jobTitle;
+        $this->job = $job;
         $this->company = $company;
     }
 
     public function __toString()
     {
-        return 'Work as' . ' ' . $this->jobTitle . ' at ' . $this->company;
+        return 'Work as' . ' ' . $this->job . ' at ' . $this->company;
     }
 }
 
