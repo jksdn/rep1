@@ -9,22 +9,22 @@ use Illuminate\Support\Facades\Gate;
 
 class AuthServiceProvider extends ServiceProvider
 {
-    /**
-     * The policy mapping for the application.
-     *
-     * @var		array
-     */
-    protected $policies = [
-        Post::class => PostPolicy::class,
-    ];
+	/**
+	 * The policy mapping for the application.
+	 *
+	 * @var		array
+	 */
+	protected $policies = [
+		Post::class => PostPolicy::class,
+	];
 
-    /**
-     * Register any application authentication / authorization services.
-     *
-     * @return void
-     */
-    public function boot()
-    {
-        $this->registerPolicies();
-    }
+	/**
+	 * Register any application authentication / authorization services.
+	 *
+	 * @return void
+	 */
+	public function boot()
+	{
+		$this->registerPolicies();
+	}
 }
